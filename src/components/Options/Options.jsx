@@ -9,7 +9,7 @@ export const FedbackOptions = ({ options, onLeaveFeedback }) => {
           key={options}
           name={options}
           type="button"
-          onClick={onLeaveFeedback}
+          onClick={() => onLeaveFeedback(options)}
         >
           {options}
         </Button>

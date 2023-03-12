@@ -6,9 +6,9 @@ const Statisctics = ({ good, neutral, bad, total, persentage }) => {
   if (total) {
     return (
       <List>
-        <Item>Good: {good}</Item>
-        <Item>Neutral: {neutral}</Item>
-        <Item>Bad: {bad}</Item>
+        <Item name="good">Good: {good}</Item>
+        <Item name="neutral">Neutral: {neutral}</Item>
+        <Item name="bad">Bad: {bad}</Item>
         <Item>Total: {total}</Item>
         <Item>Positive feedback: {persentage}%</Item>
       </List>
